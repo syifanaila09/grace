@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Navbar Modern</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">PusatSolusi</div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Beranda</a></li>
+        <li class="dropdown">
+          <a href="#">tutorial</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">belajar html</a></li>
+            <li><a href="#">belajar css</a></li>
+            <li><a href="#">belajar js</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("toggle");
+      });
+    </script>
+  </body>
+</html>
